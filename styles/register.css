@@ -1,0 +1,63 @@
+:root {
+    --baseColor: #606468;
+    --formGap: 0.875rem;
+    --loginBorderRadus: 0.25rem;
+    --loginColor: #eee;
+    --loginInputBackgroundColor: #3b4148;
+    --loginInputHoverBackgroundColor: #434a52;
+    --loginLabelBackgroundColor: #363b41;
+    --loginSubmitBackgroundColor: #ea4c88;
+    --loginSubmitColor: #eee;
+    --loginSubmitHoverBackgroundColor: #d44179;
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+  
+  .form {
+    display: grid;
+    gap: var(--formGap);
+  }
+  
+  .form__field {
+    display: flex;
+  }
+  
+  .form__input {
+    flex: 1;
+    padding: 1rem;
+    border-radius: var(--loginBorderRadus);
+  }
+  
+  input[type="password"],
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    background-color: var(--loginInputBackgroundColor);
+    border: 1px solid var(--loginInputBackgroundColor);
+    border-radius: var(--loginBorderRadus);
+    margin-bottom: var(--formGap);
+    transition: background-color 0.3s;
+  }
+  
+  input[type="password"]:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    background-color: var(--loginInputHoverBackgroundColor);
+  }
+  
+  

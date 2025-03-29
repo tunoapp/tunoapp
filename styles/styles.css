@@ -1,0 +1,55 @@
+/* ✅ Fuente global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2c3338;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+p {
+    color: #cccccc;
+}
+
+button {
+    background-color: #ea4c88;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #e43e75;
+}
+
+
+a {
+    color: #ff4f87;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Contenedores */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
